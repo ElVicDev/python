@@ -1,4 +1,4 @@
-fh = open("words.txt", "r")
+fh = ('words.txt')
 
 count = 0
 for line in fh:
