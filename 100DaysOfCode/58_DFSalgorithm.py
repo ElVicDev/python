@@ -29,5 +29,6 @@ dfs(graph, 'A')
 
 # Comparación con el código del día 57:
 # El código del día 57 implementa un algoritmo de búsqueda binaria,
-# mientras que este código del día 58 implementa un algoritmo de búsqueda de profundidad (DFS).
+# mientras que este código del día 58 implementa un algoritmo de 
+# búsqueda de profundidad (DFS).
 # Ambos códigos tratan sobre algoritmos de búsqueda.
