@@ -17,7 +17,7 @@ import plotly.offline as pyo
 import plotly.colors as pc
 
 # URL del sitio web a raspar
-url = 'https://example.com/data'
+url = 'https://www.iana.org/domains/reserved'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 # Encuentra la tabla en la página web
