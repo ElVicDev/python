@@ -17,6 +17,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 # Ejemplo de uso:
 # python 83_commandLine.py Juan --edad 25 --ciudad Madrid
 # Salida esperada:
