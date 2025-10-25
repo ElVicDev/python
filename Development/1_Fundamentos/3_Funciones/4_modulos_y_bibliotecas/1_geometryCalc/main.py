@@ -29,3 +29,17 @@ Area of circle: 78.53981633974483
 Circumference of circle: 31.41592653589793
 Area of rectangle: 24
 Perimeter of rectangle: 20 """
+
+# FLEXIBILIDAD Y CONTROL
+""" Python ofrece varias formas de importar módulos, cada una con sus 
+    propios matices y ventajas.
+    Puedes importar funciones o clases individuales de un módulo utilizando 
+    la sintaxis from ... import .... 
+    Esto te permite acceder directamente a esos elementos sin utilizar 
+    la notación de puntos. Por ejemplo: """
+#   from geometry_calculations import calculate_area_circle, Rectangle
+
+""" Puede dar a un módulo un alias más corto o más conveniente utilizando 
+    la palabra clave as. 
+    Esto puede hacer que su código sea más conciso y legible. Por ejemplo:   """
+#   import geometry_calculations as geo
