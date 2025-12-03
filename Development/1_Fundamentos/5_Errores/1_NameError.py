@@ -1,3 +1,9 @@
+# NameError
+""" Esta excepción es esencialmente la forma que tiene Python de decir: 
+    "No reconozco ese nombre que estás usando" 
+    Suele aparecer cuando intentas hacer referencia a una variable, función 
+    o módulo antes de que haya sido definida o importada correctamente. """
+
 """ Problemas de alcance:
     Las variables tienen una vida útil y una visibilidad limitadas, 
     lo que se conoce como su ámbito. 
