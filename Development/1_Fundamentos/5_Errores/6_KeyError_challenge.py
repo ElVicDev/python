@@ -15,19 +15,45 @@ Consejos:
         de error personalizado.
     - No utilice ninguna sugerencia de tipo al declarar la función. """
 
+    # Ejemplo 1:
+"""
+city_populations = {"New York": 8336817, "Los Angeles": 3979576, "Chicago": 2679044}
+city_name = "New York"
+Debería obtener la población de Nueva York, que es 8336817 en este diccionario.
+"""
+    # Ejemplo 2:
+"""
+city_populations = {"New York": 8336817, "Los Angeles": 3979576, "Chicago": 2679044}
+city_name = "Tampa"
+Esto debería producir un KeyError indicando 'Ciudad "Tampa" no encontrada en los datos de población.'
+"""
+
 def get_city_population(populations, city):
     try:
-        return populations[city]
+        # Intenta acceder a la población de la ciudad
+        population = populations[city]
+        return population
     except KeyError:
-        raise KeyError(f"La ciudad '{city}' no se encuentra en el diccionario de poblaciones.")
-
+        # Captura el KeyError si la clave (ciudad) no se encuentra
+        error_message = f'City "{city}" not found in population data.'
+        # Lanza explícitamente un nuevo KeyError con el mensaje personalizado
+        raise KeyError(error_message)
+    
 city_populations = {"New York": 8336817, "Los Angeles": 3979576, "Chicago": 2679044}
+
+# Ejemplo 1: Ciudad encontrada (Devuelve la población):
+city_name = "New York"
 try:
-    print(get_city_population(city_populations, "Tampa"))
+    population = get_city_population(city_populations, city_name)
+    print(f"The population of {city_name} is {population}")
 except KeyError as e:
-    print(e)
-    # Manejar el error o proporcionar un mecanismo alternativo
+    print(f"{e}")
+
+# Ejemplo 2: Ciudad no encontrada (Lanza KeyError)
+city_name = "Tampa"
 try:
-    print(get_city_population(city_populations, "New York"))
+    population = get_city_population(city_populations, city_name)
+    print(f"The population of {city_name} is {population}")
 except KeyError as e:
-    print(e)
+    # El mensaje de error que se imprime aquí es el mensaje personalizado
+    print(f"{e}")
